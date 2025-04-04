@@ -13,7 +13,7 @@ public class ConversionTest {
         Conversion conversion = new Conversion(exchangeRate);
        
         double result = conversion.convertAmount(350.0, "USD", "USD");
-        assertEquals(100.0, result, 0.01);
+        assertEquals(350.0, result, 0.01);
     }
 
     @Test
