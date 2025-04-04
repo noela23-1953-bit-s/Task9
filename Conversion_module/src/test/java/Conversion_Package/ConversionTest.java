@@ -1,6 +1,7 @@
 package Conversion_Package;
 
 import ExchangeRate_Package.ExchangeRate;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -30,5 +31,9 @@ public class ConversionTest {
         Conversion conversion = new Conversion(exchangeRate);
         String result = conversion.formatConversion(100.0, "USD", "UGX", 363000.0);
         assertEquals("100.00 USD = 363000.00 UGX", result);
+    }
+
+    @BeforeEach
+    void setUp() {
     }
 }
